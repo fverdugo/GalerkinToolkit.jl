@@ -1,13 +1,21 @@
 # GalerkinToolkit
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://fverdugo.github.io/GalerkinToolkit.jl/stable/)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://fverdugo.github.io/GalerkinToolkit.jl/dev/)
-[![Build Status](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Stable Documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://fverdugo.github.io/GalerkinToolkit.jl/stable)
+[![In development documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://fverdugo.github.io/GalerkinToolkit.jl/dev)
+[![Build Status](https://github.com/fverdugo/GalerkinToolkit.jl/workflows/Test/badge.svg)](https://github.com/fverdugo/GalerkinToolkit.jl/actions)
+[![Test workflow status](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Test.yml/badge.svg?branch=main)](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Test.yml?query=branch%3Amain)
+[![Lint workflow Status](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Lint.yml/badge.svg?branch=main)](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Lint.yml?query=branch%3Amain)
+[![Docs workflow Status](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Docs.yml/badge.svg?branch=main)](https://github.com/fverdugo/GalerkinToolkit.jl/actions/workflows/Docs.yml?query=branch%3Amain)
+
 [![Coverage](https://codecov.io/gh/fverdugo/GalerkinToolkit.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/fverdugo/GalerkinToolkit.jl)
+[![DOI](https://zenodo.org/badge/DOI/FIXME)](https://doi.org/FIXME)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+<!-- [![All Contributors](https://img.shields.io/github/all-contributors/fverdugo/GalerkinToolkit.jl?labelColor=5e1ec7&color=c0ffee&style=flat-square)](#contributors) -->
+[![BestieTemplate](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/JuliaBesties/BestieTemplate.jl/main/docs/src/assets/badge.json)](https://github.com/JuliaBesties/BestieTemplate.jl)
 
 ## What
 
-This package aims at providing a fully-fledged finite-element toolbox in pure Julia, with support for different computing systems from laptops to supercomputers and GPUs.  
+This package aims at providing a fully-fledged finite-element toolbox in pure Julia, with support for different computing systems from laptops to supercomputers and GPUs.
 
 NB. This package is work in progress; a proof-of-concept API is already available (for CPUs). The package is not production ready at this point. Planned performance and documentation improvements are needed.
 
@@ -24,6 +32,10 @@ Since July 2024, this package is being developed with support from the [Netherla
 - [**STABLE**](https://fverdugo.github.io/GalerkinToolkit.jl/stable) &mdash; **Documentation for the most recently tagged version.**
 - [**LATEST**](https://fverdugo.github.io/GalerkinToolkit.jl/dev) &mdash; *Documentation for the in-development version.*
 
+## How to Cite
+
+If you use GalerkinToolkit.jl in your work, please cite using the reference given in [CITATION.cff](https://github.com/fverdugo/GalerkinToolkit.jl/blob/main/CITATION.cff).
+
 ## Help and discussion
 
 - You can open a new discussion to ask questions [here](https://github.com/fverdugo/GalerkinToolkit.jl/discussions).
@@ -31,14 +43,9 @@ Since July 2024, this package is being developed with support from the [Netherla
 
 ## Contributing
 
-This package is under active development and there are several ways to contribute:
+If you want to make contributions of any kind, please first that a look into our [contributing guide directly on GitHub](docs/src/90-contributing.md) or the [contributing page on the website](https://fverdugo.github.io/GalerkinToolkit.jl/dev/90-contributing/).
 
-- by enhancing the documentation (e.g., fixing typos, enhancing doc strings, adding examples).
-- by addressing one of the [issues waiting for help](https://github.com/fverdugo/GalerkinToolkit.jl/labels/help%20wanted).
-- by adding more tests to increase the code coverage.
-- by extending the current functionality. In this case, open a discussion [here](https://github.com/fverdugo/GalerkinToolkit.jl/discussions) to coordinate with the package maintainers before proposing significant changes.
-
-Discuss with the package authors before working on any non-trivial contribution.
+---
 
 ## Examples
 
@@ -107,4 +114,3 @@ GT.vtk_plot("results",Ω) do plt
     GT.plot!(plt,uh;label="uh")
 end
 ```
-
